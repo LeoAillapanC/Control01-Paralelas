@@ -16,15 +16,36 @@
 #include <fstream> 
 
 using namespace std;
-string cambio(string sigla){
-    if (sigla=="VVA"){
-        sigla="VV";
-    }
-    return sigla;
-}
+
 /*
  * 
  */
+string cambio(string sigla){
+
+    if(sigla== "SP")  {sigla="SO";}
+    else if(sigla== "SO") {sigla="SP";}
+    else if(sigla== "LH") {sigla="HE";}
+    else if(sigla== "HE") {sigla="LH";}
+    else if(sigla== "BA")  {sigla="BQ";}
+    else if(sigla== "BQ") {sigla="BA";}
+    else if(sigla== "LE") {sigla="LEN";}
+    else if(sigla== "LEN") {sigla="LE";}
+    else if(sigla== "TB") {sigla="TOB";}
+    else if(sigla== "TOB") {sigla="TB";}
+    else if(sigla== "LC") {sigla="LCI";}
+    else if(sigla== "LCI") {sigla="LC";}
+    else if(sigla== "AN") {sigla="NA";}
+    else if(sigla== "NA") {sigla="AN";}
+    else if(sigla== "FR") {sigla="FRA";}
+    else if(sigla== "VMA") {sigla="VIM";}
+    else if(sigla== "VIM") {sigla="VMA";}
+    else if(sigla== "VVA") {sigla="VV";}
+    else if(sigla== "VV") {sigla="VVA";}
+    else if(sigla== "NU") {sigla="NUO";}
+    else if(sigla== "NUO") {sigla="NU";}
+  return sigla;
+}
+
 string removeSpaces(string input)
 {  
   for (int i = input.length()-1; i >= 0; --i) {
@@ -39,6 +60,8 @@ void doit(std::string O, std::string D, std::string F){
     std::string reverse[30];
     ifstream myfile;
  myfile.open("metro.txt");
+ myfile.clear();
+ myfile.seekg(0, ios::beg);
  string line,linea, lineao, linead, ori, des;
  while(!myfile.eof())
 {   
@@ -91,12 +114,14 @@ cout <<reverse[i]<<" ";i--;
  }while(i!=-1);
  cout <<endl;
  i=0;
+ myfile.clear();
+ myfile.seekg(0, myfile.beg);
  myfile.close();
 }
 
 void searchit(std::string O, std::string D, std::string LO, std::string LD , std::string F){
     ifstream myfile,combi,sesamo;
-    string line,linea,est,sigla;
+    string line,linea,est,sigla,change;
     string openthis = "linea"+removeSpaces(LO)+".txt";
     string abrete = "linea"+removeSpaces(LD)+".txt";
     //std::cout << openthis;
@@ -112,7 +137,8 @@ void searchit(std::string O, std::string D, std::string LO, std::string LD , std
         if(line==removeSpaces(LD)){
             cout<<sigla<<" "<<est<<" "<<line<<" "<<linea;
             doit(O,sigla,F);
-            doit(sigla,D,F);
+            change=cambio(sigla);
+            doit(change,D,"R");
      }
      }else{getline(combi,line,'\n');}
      
