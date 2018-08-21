@@ -1,6 +1,0 @@
-LCI La Cisterna
-SRA San Ramón
-SRO Santa Rosa
-LGR La Granja
-SJU Santa Julia
-VIM Vicuña Mackenna
