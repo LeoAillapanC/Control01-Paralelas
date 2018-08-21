@@ -1,0 +1,22 @@
+SP San Pablo 1
+LH Los Héroes 1
+BA Baquedano 1
+LE Los Leones 1
+TB Tobalaba 1
+LC La Cisterna 2
+AN Santa Ana 2
+FR Franklin 2
+TOB Tobalaba 4
+VMA Vicuña Mackenna 4
+VVA Vicente Valdés 4
+VIM Vicuña MAckena 4a
+LCI La Cisterna 4a
+SO San Pablo 5
+NA Santa Ana 5
+BQ Baquedano 5
+NU Ñuble 5
+VV Vicente Valdes 5
+FRA Franklin 6
+NUO Ñuble 6
+LEN Los Leones 6
+

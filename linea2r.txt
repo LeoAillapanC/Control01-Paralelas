@@ -1,0 +1,22 @@
+AV Vespucio Norte
+ZA Zapadores
+DO Dorsal
+EI Einstein
+CE Cementerios
+CB Cerro Blanco
+PT Patronato
+CA Puente Cal y Canto
+AN Santa Ana
+HE Los Héroes
+TO Toesca
+PQ Parque O'Higgins
+RO Rondizzoni
+FR Franklin
+LL El Llano
+SM San Miguel
+LV Lo Vial
+DE Departamental
+CN Ciudad del Niño
+LO Lo Ovalle
+EP El Parrón
+LC La Cisterna
